@@ -99,6 +99,7 @@ addDrawToolbar <- function(
 #' @param clearFeatures whether to clear the map of drawn features.
 #' @rdname draw
 #' @export
-removeDrawToolbar <- function(map, clearFeatures = FALSE) {
+removeDrawToolbar2 <- function(map, clearFeatures = FALSE) {
+  #Fixed version Michael Rubin
   leaflet::invokeMethod(map, leaflet::getMapData(map), "removeDrawToolbar", clearFeatures)
 }
